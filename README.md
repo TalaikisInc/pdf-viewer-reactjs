@@ -254,3 +254,11 @@ React component prop. types:
 
     -   Required: **false**
     -   Description: Defines the navigation bar styles and/or elements.
+
+# Author
+
+![Image of Author](https://avatars3.githubusercontent.com/u/5373653?s=150)
+
+### Ansuman Ghosh
+
+[ansu5555.com](https://www.ansu5555.com/)
