@@ -1,4 +1,6 @@
-# pdf-viewer-reactjs
+# @talaikis/pdf-viewer-react
+
+Note. This fork is purely personal design related, no new functionality here, so do not use.
 
 Simple react PDF Viewer component with controls like
 

@@ -9,13 +9,7 @@ export default {
     },
     external: [
         'react',
-        'prop-types',
-        'jquery',
-        'material-design-icons',
-        'bootstrap',
-        'bulma',
-        'bulma-helpers',
-        'popper.js',
+        'prop-types'
     ],
     plugins: [
         babel({

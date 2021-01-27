@@ -1,14 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-try {
-    require('bulma/css/bulma.css')
-    require('bulma-helpers/css/bulma-helpers.min.css')
-    require('material-design-icons/iconfont/material-icons.css')
-} catch (error) {}
+import { css } from '@emotion/react'
+import PuffLoader from 'react-spinners/PuffLoader'
 
 import PDF from './components/RenderPdf'
 import Navigation from './components/NavigationBar'
-import Loader from './components/Loader'
+
+const override = css`
+  display: block;
+  margin: 15% auto;
+  border-color: red;
+`
+
+const Loader = () => <PuffLoader
+  size={150}
+  css={override}
+  color="red"
+  loading={true} />
 
 class PDFViewer extends React.Component {
     constructor(props) {
@@ -257,7 +265,7 @@ class PDFViewer extends React.Component {
                                       overflow: 'auto',
                                   }
                         }>
-                        {loader ? loader : <Loader />}
+                        <Loader />
                     </div>
                 </div>
                 <div style={{ display: this.state.isReady ? 'block' : 'none' }}>
